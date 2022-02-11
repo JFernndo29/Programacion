@@ -22,6 +22,7 @@ public class InventarioLibro {
 		}
 	}
 
+	
 	public ArrayList<Libreria> getLibros() {
 		return libros;
 	}

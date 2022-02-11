@@ -1,37 +1,37 @@
-import java.util.ArrayList;
-public class InventarioLibro {
+importar  java.util.ArrayList ;
+public  class  InventarioLibro {
 
-	private ArrayList<Libreria> libros = new ArrayList<Libreria>();
+	private  ArrayList< Libreria > libros =  new  ArrayList< Libreria > ();
 	
-	public void almacenar(Libreria libro) {
-		libros.add(libro);
+	public  void  almacenes ( Libreria  libro ) {
+		libros _ add(libro);
 	}
 	
-	public Libreria getLibrobyIsbn(String isbn) {
-		for(Libreria l: libros) {
-			if(l.getIsbn().equals(isbn)) {
-				return l;
+	 Librería  pública getLibrobyIsbn ( String  isbn ) {
+		for ( Librería l : libros) {
+			if (l . getIsbn() . equals(isbn)) {
+				devolver l;
 			}
 		}
-		return null;
+		devolver  nulo ;
 	}
 	
-	public void verLibreria() {
-		for(Libreria lb: libros) {
-			System.out.println(lb);
+	public  void  verLibreria () {
+		for ( Librería lb : libros) {
+			sistema _ fuera _ imprimir(lb);
 		}
 	}
 
 	
-	public ArrayList<Libreria> getLibros() {
-		return libros;
+	public  ArrayList< Libreria >  getLibros () {
+		devolver libros;
 	}
 	
-	public void ventaLibro(Libreria libro, int cantidadlibro) {
-		if(libro.getCantidadLibro()<cantidadlibro) {
-			System.out.println("No hay stock");
-		}else if(libro.getCantidadLibro()>=cantidadlibro) {
-			libro.setCantidad(libro.getCantidadLibro()-cantidadlibro);
+	public  void  ventaLibro ( Libreria  libro , int  cantidadlibro ) {
+		if (libro . getCantidadLibro() < cantidadlibro) {
+			sistema _ fuera _ println( " No hay existencias de heno " );
+		} else  if (libro . getCantidadLibro() >= cantidadlibro) {
+			libro _ setCantidad(libro . getCantidadLibro() - cantidadlibro);
 		}
 	}
 }
